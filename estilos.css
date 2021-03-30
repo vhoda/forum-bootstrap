@@ -1,0 +1,82 @@
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+* {
+  font-family: 'Prompt', sans-serif;
+  background-color: black;  
+  animation: fadein 1s;
+}
+
+.form-container {
+  height: 100vh;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: block;
+  position: relative;
+}
+
+#form-signup-heading{
+  text-align: center;
+  color: rgb(255, 253, 253);
+  text-shadow: 1px 1px 1px #5a5a5a;
+}
+
+.form-signup {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  color: rgb(255, 253, 253);
+}
+
+.form-signup .form-signup-heading,
+.form-signup .checkbox, .form-signup .input-box{
+  margin-bottom: 10px;
+  color: rgb(255, 253, 253);
+}
+
+.form-signup .checkbox {
+  font-weight: normal;
+}
+
+.form-signup .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+  
+}
+
+.form-signup .form-control:focus {
+  z-index: 2;
+}
+
+.form-signup input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  
+}
+
+.form-signup input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.btn-primary{
+  background-color: rgb(136, 12, 115);
+  border-color: rgb(129, 6, 160);
+  transition: 0.3s;
+  font-size: 16px;
+}
+.btn-primary:hover{
+  background-color: rgb(77, 38, 70);
+  border-color: rgb(129, 6, 160);
+  transition: 0.3s;
+  font-size: 20px;
+}
